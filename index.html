@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font"
+    >
+      <div
+        class="container mx-auto flex flex-row p-5 justify-between items-center sm:p-2"
+      >
+        <!-- Logo of ACES -->
+        <a
+          href="index.html"
+          class="flex title-font font-medium items-center text-white lg:items-center mb-4 md:mb-0 ml-8"
+        >
+          <img
+            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+            src="images/logo/logo-blue.jpg"
+          />
+        </a>
+        <!-- Primary Navbar Items -->
+        <nav class="hidden md:flex mr-8">
+          <a
+            href="index.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 text-white"
+            >Home</a
+          >
+          <a
+            href="aboutus.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 hover:text-white"
+            >About Us</a
+          >
+          <a
+            href="team.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 hover:text-white"
+            >Team</a
+          >
+          <a
+            href="event.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 hover:text-white"
+            >Events</a
+          >
+          <a
+            href="contact.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 hover:text-white"
+            >Contact Us</a
+          >
+        </nav>
+
+        <!-- Menu Items Icon -->
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg
+              class="w-10 h-10 text-gray-500 hover:text-sky-500"
+              x-show="!showMenu"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active">
+            <a
+              href="index.html"
+              class="block text-sm px-2 py-4 text-white bg-sky-500 font-semibold"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="aboutus.html"
+              class="block text-sm px-2 py-4 hover:bg-sky-500 transition duration-300"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="team.html"
+              class="block text-sm px-2 py-4 hover:bg-sky-500 transition duration-300"
+              >Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="event.html"
+              class="block text-sm px-2 py-4 hover:bg-sky-500 transition duration-300"
+              >Events</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block text-sm px-2 py-4 hover:bg-sky-500 transition duration-300"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector('button.mobile-menu-button')
+        const menu = document.querySelector('.mobile-menu')
+
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden')
+        })
+      </script>
+    </header>
+    <section
+      class="text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font"
+    >
+      <div
+        class="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center ml-5"
+        >
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
+          >
+            Welcome to <br class="hidden lg:inline-block" />Association of
+            Computer Engineering Students!
+          </h1>
+          <p class="mb-8 sm:text-lg leading-relaxed">
+            Association of Computer Engineering Students (ACES), was established
+            in 2001 by the Department of Computer Science and Engineering. All
+            the students of the Department are members of ACES. ACES aims to
+            make students technically stronger by organising various workshops
+            and seminars on the latest technologies. The organisation also
+            contributes to the betterment of society by organising socially
+            relevant technical activities.
+          </p>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            class="object-cover object-center rounded"
+            alt="hero"
+            src="images/vector/home2-vector-img.jpg"
+          />
+        </div>
+      </div>
+    </section>
+    <section
+      class="text-gray-400 body-font bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900"
+    >
+      <div class="container px-5 py-16 mx-auto">
+        <div
+          class="flex flex-wrap w-full mb-20 flex-col items-center text-center"
+        >
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"
+          >
+            Features of Association of Computer Engineering Students
+          </h1>
+          <p class="lg:w-1/2 w-full leading-relaxed text-opacity-80"></p>
+        </div>
+        <div class="flex flex-wrap -m-4">
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div
+              class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path
+                    d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-white font-medium title-font mb-2">
+                Participation beyond academics
+              </h2>
+              <p class="leading-relaxed text-base">
+                ACES is committed to help students get most out of their
+                experience at the university. They offer endless opportunities
+                for student leadership and participation beyond classroom setup
+                and academic programme.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div
+              class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-white-400 text-indigo-400 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-white font-medium title-font mb-2">
+                Holistic Development
+              </h2>
+              <p class="leading-relaxed text-base">
+                It helps in students transformation and holistic development.
+                The clubs are particularly aimed at helping students to get
+                involved and find their own niche on campus.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div
+              class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-white font-medium title-font mb-2">
+                Shapes the skills
+              </h2>
+              <p class="leading-relaxed text-base">
+                Student clubs at university level nurture shaping skills of the
+                students and make them life-ready. The club activities play an
+                important role in determining and directing the passion and
+                interest of students, beyond their academic pursuit.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div
+              class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-white font-medium title-font mb-2">
+                Makes you corporate ready
+              </h2>
+              <p class="leading-relaxed text-base">
+                The extracurricular activities organizing by these clubs teach
+                the students practical factors of life, making them not only job
+                ready but making them ready to face the uneven path of survival
+                in the world of cut-throat competition.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div
+              class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-white font-medium title-font mb-2">
+                Team Work
+              </h2>
+              <p class="leading-relaxed text-base">
+                Student clubs help in learning to work with a team as it is an
+                essential skill for any career; it provides networking
+                opportunities through student-meetings across various programs
+                of the university, making connections, and building
+                relationships for life.
+              </p>
+            </div>
+          </div>
+          <div class="xl:w-1/3 md:w-1/2 p-4">
+            <div
+              class="border border-gray-700 border-opacity-75 p-6 rounded-lg"
+            >
+              <div
+                class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-4"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"
+                  />
+                </svg>
+              </div>
+              <h2 class="text-lg text-white font-medium title-font mb-2">
+                Develop leadership qualities
+              </h2>
+              <p class="leading-relaxed text-base">
+                You will be learning how different people respond and react to
+                certain situations and grab the opportunity to learn about
+                different cultural backgrounds. ACES also provide opportunities
+                to the students by selecting the office bearers for organizing
+                activities and pursuing the goal of each club, and help in
+                developing leadership skills.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="flex mx-auto mt-16 transition ease-in-out delay-150 text-white bg-gradient-to-r from-green-400 to-blue-500 hover:-translate-y-1 hover:scale-110 duration-300 border-0 py-2 px-8 focus:outline-none hover:bg-yellow-600 rounded text-lg"
+        >
+          <a href="aboutus.html"> About Us </a>
+        </button>
+      </div>
+    </section>
+    <section
+      class="text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font"
+    >
+      <div class="container px-5 py-16 mx-auto flex flex-wrap">
+        <div class="flex w-full mb-20 flex-wrap">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font text-white lg:w-1/3 lg:mb-0 mb-4"
+          >
+            Here's a Glimpse of our events!
+          </h1>
+          <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base">
+            We have done very successful events in past and here's a glimpse of
+            the events that we have conducted successfully.
+          </p>
+        </div>
+        <div class="flex flex-wrap md:-m-2 -m-1">
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="images/Events/event3.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="images/Events/event5.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block"
+                src="images/Events/event7.jpg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover object-center block"
+                src="images/Events/event9.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="images/Events/event4.jpg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full object-center block"
+                src="images/Events/event1.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font"
+    >
+      <div class="container px-5 py-16 mx-auto">
+        <h1
+          class="text-3xl font-medium title-font text-white mb-12 text-center"
+        >
+          Our Faculty Advisor
+        </h1>
+        <div class="flex flex-wrap -m-4">
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-500 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Prof Sapan Mankad is working as an Assistant Professor in
+                Computer Science and Engineering Department. He has more than 17
+                years of teaching experience. Prof Mankad received his BE degree
+                in Information Technology from VVP Engineering College and MTech
+                degree in Computer Science and Engineering from Nirma
+                University. He has recently completed PhD in the field of Speech
+                Processing using Machine Learning from Nirma University. His
+                research interests include Audio and Speech Processing, Voice
+                Biometrics, Machine Learning and Music Information Retrieval. He
+                has several publications to his credit. He has been actively
+                involved in organization of various workshops related to fields
+                such as Speech Processing, Probability, Statistics and Machine
+                Learning.
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="images/BoardMember/Faculty_Advisor_Pooja Shah.jpg"
+                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-white"
+                    >Pooja Shah</span
+                  >
+                  <span class="text-gray-500 text-sm">Faculty Advisor</span>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="p-4 md:w-1/2 w-full">
+            <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                class="block w-5 h-5 text-gray-500 mb-4"
+                viewBox="0 0 975.036 975.036"
+              >
+                <path
+                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
+                ></path>
+              </svg>
+              <p class="leading-relaxed mb-6">
+                Prof Pooja Shah is Assistant Professor under the department of
+                Computer Science and Engineering. She has over 15 years of
+                teaching experience. Prof Shah has received her BE in Computer
+                Engineering from Saurashtra University (2005) and MTech Computer
+                Science and Engineering from Nirma University (2012). She is
+                currently pursuing her PhD in the field of satellite
+                oceanography. The domain is a mix of Physics, Image Processing,
+                SAR polarimetry and deep learning. Her international exposure
+                includes visits to Texas - FortWorth, USA (2017) for her
+                doctoral research work presentation. Dr Shah has completed one
+                major research project as a coPI under ISRO RESPOND and is
+                active as coPI of two other research projects. She has worked as
+                faculty advisor and later as branch counselor of IEEE student
+                branch Nirma University from 2012 to 2018. She is active faculty
+                advisor of Association of Computer Engineering Students (ACES).
+                Dr Shah is also a member of various professional bodies viz.
+                senior member IEEE, IEEE GeoScience and Remote Sensing Society
+                and Life Member of ISTE and CSI.
+              </p>
+              <a class="inline-flex items-center">
+                <img
+                  alt="testimonial"
+                  src="images/BoardMember/Faculty_Advisor_Sapan Sir.jpg"
+                  class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                />
+                <span class="flex-grow flex flex-col pl-4">
+                  <span class="title-font font-medium text-white"
+                    >Sapan Sir</span
+                  >
+                  <span class="text-gray-500 text-sm">Faculty Advisor</span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font"
+    >
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-white"
+        >
+          <img
+            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+            src="images/logo/logo-blue.jpg"
+          />
+          <span class="ml-3 text-xl">ACES</span>
+        </a>
+        <p
+          class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2021 ACES —
+          <a
+            href="https://twitter.com/knyttneve"
+            class="text-gray-500 ml-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@aces</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a
+            href="https://www.facebook.com/aces.itnu/"
+            target="_blank"
+            class="text-gray-400"
+          >
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/aces_it_nu/"
+            target="_blank"
+            class="ml-3 text-gray-400"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/association-of-computer-engineering-students/"
+            target="_blank"
+            class="ml-3 text-gray-400"
+          >
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+    <script>
+      const btn = document.querySelector('button.mobile-menu-button')
+      const menu = document.querySelector('.mobile-menu')
+      btn.addEventListener('click', () => {
+        menu.classList.toggle('hidden')
+      })
+    </script>
+  </body>
+</html>

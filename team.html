@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header
+      class="text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font"
+    >
+      <div
+        class="container mx-auto flex flex-row p-5 justify-between items-center sm:p-2"
+      >
+        <!-- Logo of ACES -->
+        <a
+          href="index.html"
+          class="flex title-font font-medium items-center text-white lg:items-center mb-4 md:mb-0 ml-8"
+        >
+          <img
+            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+            src="images/logo/logo-blue.jpg"
+          />
+        </a>
+        <!-- Primary Navbar Items -->
+        <nav class="hidden md:flex mr-8">
+          <a
+            href="index.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 hover:text-white"
+            >Home</a
+          >
+          <a
+            href="aboutus.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 hover:text-white"
+            >About Us</a
+          >
+          <a
+            href="team.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 text-white"
+            >Team</a
+          >
+          <a
+            href="event.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 hover:text-white"
+            >Events</a
+          >
+          <a
+            href="contact.html"
+            class="mr-8 transform hover:transition hover:duration-300 hover:scale-125 hover:text-white"
+            >Contact Us</a
+          >
+        </nav>
+
+        <!-- Menu Items Icon -->
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+            <svg
+              class="w-10 h-10 text-gray-500 hover:text-sky-500"
+              x-show="!showMenu"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="hidden mobile-menu">
+        <ul class="">
+          <li class="active">
+            <a
+              href="index.html"
+              class="block text-sm px-2 py-4 hover:bg-sky-500 transition duration-300"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="aboutus.html"
+              class="block text-sm px-2 py-4 hover:bg-sky-500 transition duration-300"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a
+              href="team.html"
+              class="block text-sm px-2 py-4 text-white bg-sky-500 font-semibold"
+              >Team</a
+            >
+          </li>
+          <li>
+            <a
+              href="event.html"
+              class="block text-sm px-2 py-4 hover:bg-sky-500 transition duration-300"
+              >Events</a
+            >
+          </li>
+          <li>
+            <a
+              href="contact.html"
+              class="block text-sm px-2 py-4 hover:bg-sky-500 transition duration-300"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <script>
+        const btn = document.querySelector('button.mobile-menu-button')
+        const menu = document.querySelector('.mobile-menu')
+
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden')
+        })
+      </script>
+    </header>
+    <section
+      class="text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font"
+    >
+      <div
+        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+      >
+        <img
+          class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+          alt="hero"
+          src="images/vector/team-vector-img.jpg"
+        />
+        <div class="text-center lg:w-2/3 w-full">
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
+          >
+            Association of Computer Engineering Students (ACES)
+          </h1>
+          <p class="leading-relaxed mb-8">
+            was established in 2001 by the Department of Computer Science and
+            Engineering. All the students of the Department are members of ACES.
+            ACES aims to make students technically stronger by organising
+            various workshops and seminars on the latest technologies.The
+            organisation also contributes to the betterment of society by
+            organising socially relevant technical activities.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font"
+    >
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1
+            class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white"
+          >
+            Our Team
+          </h1>
+          <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+            ACES is pleased to announce the appointment of new Board members to
+            provide leadership and overall guidance in the technical and
+            non-technical field. With a choice of so many excellent candidates,
+            we were challenged to narrow the field to appointees and the hunt
+            finally turned fruitful. If there was ever a place to find your
+            passion, hone your skills to perfection and ameliorate yourself...
+            It is your very own club of ACES!!! So join us on this journey to
+            new beginnings and fresh possibilities and much more exciting
+            explorations coming on the way. We present to you the board of
+            2021-22!
+          </p>
+        </div>
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/1Kanisha Shah - President.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Kanisha Shah</h2>
+                <p class="text-gray-600">President</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/2Meet Vora - Vice President.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Meet Vora</h2>
+                <p class="text-gray-600">Vice President</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/3Mrunal Shah - Director General.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Mrunal Shah</h2>
+                <p class="text-gray-600">Director General</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/4Kunj Thakkar-General Secretary.jpeg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Kunj Thakkar</h2>
+                <p class="text-gray-600">General Secretary</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/5Manan Patel - Joint Secretary.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Manan Patel</h2>
+                <p class="text-gray-600">Joint Secretary</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/6Akshat Shah - Organizing Secretary.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Akshat Shah</h2>
+                <p class="text-gray-600">Organizing Secretary</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/7Gaurav Sakariya - Creative Head.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Gaurav Sakariya
+                </h2>
+                <p class="text-gray-600">Creative Head</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/8Naman Thaker - Managing director.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Naman Thaker</h2>
+                <p class="text-gray-600">Managing Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/12Kalp Mepani - Treasurer.jpeg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Kalp Mepani</h2>
+                <p class="text-gray-600">Treasurer</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/9Ansh Ray - Public Relations Officer.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Ansh Ray</h2>
+                <p class="text-gray-600">Public Relations Officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/10Sachi_Chaudhary-Marketing_Director.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Sachi Chaudhary
+                </h2>
+                <p class="text-gray-600">Marketing Director</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/11Savan Vaghani -Membership Chair.png"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Savan Vaghani</h2>
+                <p class="text-gray-600">Membership Chair</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/13Shivam Panchal - Technical Head.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Shivam Panchal
+                </h2>
+                <p class="text-gray-600">Technical Head</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/14Yagnik Thummar - Technical Head.png"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">
+                  Yagnik Thummar
+                </h2>
+                <p class="text-gray-600">Technical Head</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/15Aayush Shah - Graphic Designer.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Aayush Shah</h2>
+                <p class="text-gray-600">Graphic Designer</p>
+              </div>
+            </div>
+          </div>
+          <div class="p-2 lg:w-1/4 md:w-1/2 w-full">
+            <div
+              class="h-full flex items-center border-gray-800 border p-4 rounded-lg"
+            >
+              <img
+                alt="team"
+                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4 transform hover:transition hover:duration-300 hover:scale-125 hover:cursor-pointer"
+                src="images/BoardMember/16Yash Savani - Editor.jpg"
+              />
+              <div class="flex-grow">
+                <h2 class="text-white title-font font-medium">Yash Savani</h2>
+                <p class="text-gray-600">Editor</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="text-gray-400 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 body-font"
+    >
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-white"
+        >
+          <img
+            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+            src="images/logo/logo-blue.jpg"
+          />
+          <span class="ml-3 text-xl">ACES</span>
+        </a>
+        <p
+          class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2021 ACES —
+          <a
+            href="https://twitter.com/knyttneve"
+            class="text-gray-500 ml-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            >@aces</a
+          >
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a
+            href="https://www.facebook.com/aces.itnu/"
+            target="_blank"
+            class="text-gray-400"
+          >
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+
+          <a
+            href="https://www.instagram.com/aces_it_nu/"
+            target="_blank"
+            class="ml-3 text-gray-400"
+          >
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/company/association-of-computer-engineering-students/"
+            target="_blank"
+            class="ml-3 text-gray-400"
+          >
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
